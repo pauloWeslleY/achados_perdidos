@@ -15,7 +15,7 @@ export default function NavBar() {
             asChild
             variant="plain"
             color="blackAlpha.900"
-            size="sm"
+            size="lg"
           >
             <Link href="/">Sobre Nós</Link>
           </ChakraButton>
@@ -23,12 +23,12 @@ export default function NavBar() {
             asChild
             variant="plain"
             color="blackAlpha.900"
-            size="sm"
+            size="lg"
           >
             <Link href="/">Contatos</Link>
           </ChakraButton>
 
-          <Button size="sm" w="130px" justifyContent="center">
+          <Button size="sm" justifyContent="center">
             Entrar
           </Button>
         </Flex>

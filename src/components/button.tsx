@@ -36,13 +36,14 @@ const buttonRecipe = defineRecipe({
       outline: { borderWidth: "1px", borderColor: "red.200" },
     },
     size: {
-      sm: { padding: "4", fontSize: "12px" },
-      lg: { padding: "8", fontSize: "24px" },
+      sm: { paddingY: "2", paddingX: "8", fontSize: "md" },
+      lg: { paddingY: "4", paddingX: "8", fontSize: "lg" },
     },
   },
 });
 
 type ButtonVariantProps = RecipeVariantProps<typeof buttonRecipe>;
+
 type ButtonProps = ButtonVariantProps &
   ComponentProps<"button"> &
   ChakraButtonProps;

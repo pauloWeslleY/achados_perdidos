@@ -9,7 +9,7 @@ const themeConfig = defineConfig({
       width: "2",
     },
     "*::-webkit-scrollbar-track": {
-      background: "blackAlpha.300",
+      background: "whiteAlpha.900",
     },
     "*::-webkit-scrollbar-thumb": {
       background: "sky.500",
