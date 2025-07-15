@@ -36,7 +36,7 @@ export default function SignIn() {
         </Button>
 
         <Flex gap="1.5" justify="center">
-          <Text color="gray.500">Ja possui uma conta?</Text>
+          <Text color="gray.500">Não possui uma conta?</Text>
 
           <Box
             asChild
@@ -44,7 +44,7 @@ export default function SignIn() {
             transition="color 0.2s ease-in-out"
             _hover={{ color: "sky.800/50", textDecoration: "underline" }}
           >
-            <Link href="/authentication/sign-up">Criar Conta</Link>
+            <Link href="/authentication/sign-up">Cadastre-se</Link>
           </Box>
         </Flex>
       </Stack>

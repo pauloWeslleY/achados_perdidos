@@ -56,6 +56,7 @@ export function FormSignIn() {
         asChild
         colorPalette="blue"
         color="sky.700"
+        fontSize="sm"
         transition="color 0.2s ease-in-out"
         _hover={{ color: "sky.800/50", textDecoration: "underline" }}
       >

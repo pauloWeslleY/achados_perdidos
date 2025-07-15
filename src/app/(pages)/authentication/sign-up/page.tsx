@@ -36,7 +36,7 @@ export default function SignUp() {
         </Button>
 
         <Flex gap="1.5" justify="center">
-          <Text color="gray.500">Ja possui uma conta?</Text>
+          <Text color="gray.500">Já possui uma conta?</Text>
 
           <Box
             asChild
