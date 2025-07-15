@@ -28,8 +28,8 @@ export default function NavBar() {
             <Link href="/">Contatos</Link>
           </ChakraButton>
 
-          <Button size="sm" justifyContent="center">
-            Entrar
+          <Button asChild size="sm" justifyContent="center">
+            <Link href="/authentication/sign-in">Entrar</Link>
           </Button>
         </Flex>
       </HStack>
