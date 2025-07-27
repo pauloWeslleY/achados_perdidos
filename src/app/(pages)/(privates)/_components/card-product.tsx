@@ -3,9 +3,13 @@
 import { Button, Card, Dialog, Portal } from "@chakra-ui/react";
 import Image from "next/image";
 
-export function CardProduct() {
+interface CardProductProps {
+  name: string;
+}
+
+export function CardProduct({ name }: CardProductProps) {
   return (
-    <Card.Root maxW="sm" overflow="hidden" shadow="lg" rounded="2xl">
+    <Card.Root flex="1 1 225px" overflow="hidden" shadow="lg" rounded="2xl">
       <Image
         src="/card-image.png"
         alt="Card image"
@@ -15,7 +19,7 @@ export function CardProduct() {
       />
 
       <Card.Body gap="2">
-        <Card.Title>Nome: </Card.Title>
+        <Card.Title>Nome: {name}</Card.Title>
       </Card.Body>
       <Card.Footer gap="2">
         <Dialog.Root placement="center" motionPreset="slide-in-bottom">

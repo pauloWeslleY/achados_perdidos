@@ -10,6 +10,11 @@ const LoadMenu = [
   "Jogo & Esportes",
 ];
 
+const LoadProducts = Array.from({ length: 4 }).map((_, index) => ({
+  id: index,
+  name: `Product ${index}`,
+}));
+
 export default function HomeProductPage() {
   return (
     <Container maxW="7xl">
@@ -39,8 +44,14 @@ export default function HomeProductPage() {
                 <Tabs.Content key={index} value={menu}>
                   {menu}
 
-                  <HStack w="full" wrap="wrap" gap="10" mt="5">
-                    <CardProduct />
+                  <HStack w="full" wrap="wrap" gap="5" py="10">
+                    <For each={LoadProducts}>
+                      {(product) => {
+                        return (
+                          <CardProduct key={product.id} name={product.name} />
+                        );
+                      }}
+                    </For>
                   </HStack>
                 </Tabs.Content>
               );

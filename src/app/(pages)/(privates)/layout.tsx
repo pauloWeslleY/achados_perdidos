@@ -16,7 +16,6 @@ export default function HomeProductLayout({ children }: PropsWithChildren) {
       </Box>
 
       <FooterMenu />
-
       <Footer />
     </>
   );

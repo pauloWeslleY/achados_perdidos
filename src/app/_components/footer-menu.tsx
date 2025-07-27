@@ -3,14 +3,16 @@ import {
   Container,
   For,
   HStack,
+  type StackProps,
 } from "@chakra-ui/react";
 
 const foundations = ["FIESP", "CIESP", "SENAI", "SESI", "IRS"];
 
-export function FooterMenu() {
+export function FooterMenu(props: StackProps) {
   return (
     <Container maxW="breakpoint-xl" my="10" spaceY="10">
       <HStack
+        {...props}
         justify="space-between"
         color="sky.900"
         pt="20"
