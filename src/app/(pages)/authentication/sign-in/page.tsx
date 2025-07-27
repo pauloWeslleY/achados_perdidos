@@ -3,16 +3,15 @@
 import {
   Box,
   Button,
-  Flex,
   Heading,
   Icon,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 
+import { FooterAuthLink } from "../_components/footer-auth-link";
 import { FormSignIn } from "./form-sign-in";
 
 export default function SignIn() {
@@ -35,18 +34,7 @@ export default function SignIn() {
           Continuar com o Google
         </Button>
 
-        <Flex gap="1.5" justify="center">
-          <Text color="gray.500">Não possui uma conta?</Text>
-
-          <Box
-            asChild
-            color="sky.700"
-            transition="color 0.2s ease-in-out"
-            _hover={{ color: "sky.800/50", textDecoration: "underline" }}
-          >
-            <Link href="/authentication/sign-up">Cadastre-se</Link>
-          </Box>
-        </Flex>
+        <FooterAuthLink />
       </Stack>
     </VStack>
   );

@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["chakra", "icone", "Icone"]
+  "cSpell.words": ["chakra", "icone", "Icone"],
+  "a-file-icon-vscode.activeIconPacks": ["next", "react", "redux", "rails"]
 }

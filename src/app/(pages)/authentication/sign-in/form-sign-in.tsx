@@ -9,10 +9,17 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { PasswordInput } from "@/components/ui/password-input";
 
 export function FormSignIn() {
+  const router = useRouter();
+
+  const handleGoHomeProduct = () => {
+    router.push("/home-products");
+  };
+
   return (
     <chakra.form
       display="flex"
@@ -60,10 +67,16 @@ export function FormSignIn() {
         transition="color 0.2s ease-in-out"
         _hover={{ color: "sky.800/50", textDecoration: "underline" }}
       >
-        <Link href="/">Esqueceu sua senha?</Link>
+        <Link href="/authentication/forgot-password">Esqueceu sua senha?</Link>
       </Box>
 
-      <Button size="md" rounded="xl" colorPalette="sky" w="full">
+      <Button
+        onClick={handleGoHomeProduct}
+        size="md"
+        rounded="xl"
+        colorPalette="sky"
+        w="full"
+      >
         Login
       </Button>
     </chakra.form>

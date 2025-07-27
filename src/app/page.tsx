@@ -1,10 +1,7 @@
 import {
   Box,
-  Button as ChakraButton,
   Container,
-  For,
   Heading,
-  HStack,
   SimpleGrid,
   Text,
   VStack,
@@ -15,10 +12,9 @@ import { Button } from "@/components/button";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 
+import { FooterMenu } from "./_components/footer-menu";
 import OurSite from "./_components/our-site";
 import Working from "./_components/working";
-
-const foundations = ["FIESP", "CIESP", "SENAI", "SESI", "IRS"];
 
 export default function Home() {
   return (
@@ -68,34 +64,7 @@ export default function Home() {
 
         <Working />
 
-        <Container maxW="breakpoint-xl" my="10" spaceY="10">
-          <HStack
-            justify="space-between"
-            color="sky.900"
-            pt="20"
-            pb="5"
-            borderBottomWidth="1px"
-            borderColor="gray.900"
-            w="full"
-          >
-            <For each={foundations}>
-              {(link, index) => {
-                return (
-                  <ChakraButton
-                    key={index}
-                    variant="ghost"
-                    rounded="xl"
-                    colorPalette="blue"
-                    color="blue.950"
-                    size="lg"
-                  >
-                    {link}
-                  </ChakraButton>
-                );
-              }}
-            </For>
-          </HStack>
-        </Container>
+        <FooterMenu />
       </Box>
 
       <Footer />

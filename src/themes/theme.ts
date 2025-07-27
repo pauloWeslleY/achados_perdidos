@@ -19,10 +19,12 @@ const themeConfig = defineConfig({
     body: {
       "--webkit-font-smoothing": "antialiased",
       textRendering: "optimizeLegibility",
+      display: "flex",
+      flexDir: "column",
     },
 
     "html, body": {
-      height: "full",
+      h: "full",
       bgGradient: "to-r",
       gradientFrom: "sky.300",
       gradientTo: "sky.500",
