@@ -1,6 +1,6 @@
 import IconPhone from "@/assets/Icone-fone.svg";
 import IconPencil from "@/assets/Icone-lapis.svg";
-import IconNotebook from "@/assets/Icone-notebook.svg";
+import IconNotebook from "@/assets/icone-notebook.svg";
 import IconPerson from "@/assets/Icone-pessoa.svg";
 
 export const OurSiteData = [

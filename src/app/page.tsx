@@ -21,8 +21,8 @@ export default function Home() {
     <div>
       <NavBar />
 
-      <Box as="main" h="full">
-        <Container maxW="breakpoint-xl">
+      <Box as="main">
+        <Container as="section" maxW="breakpoint-xl">
           <SimpleGrid columns={{ base: 1, md: 2 }} gap="10">
             <VStack align="start" justify="center" gap="1">
               <Heading size="7xl" color="sky.900" spaceY="8">
@@ -63,11 +63,12 @@ export default function Home() {
         <OurSite />
 
         <Working />
-
-        <FooterMenu />
       </Box>
 
-      <Footer />
+      <Box>
+        <FooterMenu />
+        <Footer />
+      </Box>
     </div>
   );
 }

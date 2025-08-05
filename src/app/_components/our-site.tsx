@@ -15,7 +15,7 @@ import { OurSiteData } from "@/data/our-site.data";
 
 export default function OurSite() {
   return (
-    <Container maxW="breakpoint-xl" my="10" spaceY="4">
+    <Container as="section" maxW="breakpoint-xl" my="10" spaceY="4">
       <Box color="sky.900" pt="20">
         <Heading size="6xl">Em Nosso Site</Heading>
         <Text fontSize="2xl" fontWeight="bold">
@@ -34,7 +34,13 @@ export default function OurSite() {
           <For each={OurSiteData}>
             {(item, index) => {
               return (
-                <Card.Root key={index} w="240px" rounded="2xl" shadow="md">
+                <Card.Root
+                  key={index}
+                  as="article"
+                  w="240px"
+                  rounded="2xl"
+                  shadow="md"
+                >
                   <Card.Header alignItems="center">
                     <Box pos="relative" boxSize="16">
                       <Box asChild objectFit="cover">

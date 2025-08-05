@@ -13,7 +13,7 @@ import BallonIcon from "@/assets/icone-balão.svg";
 
 export default function Working() {
   return (
-    <Container maxW="breakpoint-xl" my="10" spaceY="10">
+    <Container as="section" maxW="breakpoint-xl" mt="10" spaceY="10">
       <Box color="sky.900" pt="20">
         <Heading size="6xl">Como Funcionamos?</Heading>
       </Box>
