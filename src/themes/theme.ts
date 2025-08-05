@@ -26,7 +26,7 @@ const themeConfig = defineConfig({
     "html, body": {
       h: "full",
       bgGradient: "to-r",
-      gradientFrom: "sky.300",
+      gradientFrom: "sky.200",
       gradientTo: "sky.500",
     },
   },

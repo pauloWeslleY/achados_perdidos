@@ -58,7 +58,7 @@ export function FormSignUp() {
           <Checkbox.Control />
           <Checkbox.Label>
             Aceito as{" "}
-            <Link href="/" colorPalette="blue">
+            <Link href="/" colorPalette="sky">
               Políticas de Privacidade
             </Link>
             .
